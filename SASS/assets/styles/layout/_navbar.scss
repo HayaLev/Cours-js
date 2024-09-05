@@ -1,0 +1,14 @@
+nav {
+    background: $color1;
+    border-radius: 10px;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        align-items: center;
+
+        li {
+            list-style: none;
+        }
+    }
+}

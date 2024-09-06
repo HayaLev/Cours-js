@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'inter-bold';
+    src: url(../fonts/Inter\ Extra\ Bold\ 800.otf);   
+}
+@font-face {
+    font-family: 'merri';
+    src: url('../fonts/Merriweather-Light.ttf');
+    }
+
+$font1: inter, sans-serif;
+$font2: merri, serif;
+$black1:rgb(17,17,17);
+$white1:rgb(243,243,243);
+$grey1:rgb(209,209,209);
+$grey2:rgb(233,233,233);
+$grey3:rgb(105,105,105);
+
+@mixin title {
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a, 
+a:visited {
+    color: $white1;
+}
+
+body {
+    background: url(../img/bg.jpg) fixed center/cover;
+    text-align: center;
+    font-family: $font2;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &::before {
+        content: "";
+        
+    }
+}
